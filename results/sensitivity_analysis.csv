@@ -1,0 +1,8 @@
+constraint,slack,shadow_price_per_1000_lbs
+Whole demand,13700.0,0.0
+Juice demand,700.0,0.0
+Paste demand,0.0,48.335
+Grade A supply,0.0,271.005
+Grade B supply,0.0,173.665
+Whole quality,0.0,-24.335
+Juice quality,0.0,24.335

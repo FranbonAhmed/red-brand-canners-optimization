@@ -1,0 +1,5 @@
+order_choice,order_lbs,sunny_profit,normal_profit,poor_profit,expected_profit
+Order S = 13.0M lbs,13000000,513567.0,97583.33,-1185100.67,-119091.75
+Order N = 8.0M lbs,8000000,333888.0,275350.0,-513994.0,92648.5
+Order P = 2.73M lbs,2727273,113825.45,104854.55,77941.82,100369.09
+Grid best = 3.65M lbs,3650000,152336.4,140330.33,69868.8,125716.47
