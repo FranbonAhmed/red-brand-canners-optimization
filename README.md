@@ -4,7 +4,7 @@
 
 This portfolio case study models a food manufacturer's production, purchasing, capacity, line-opening, and raw-material contracting decisions using **Python and Gurobi**.
 
-The project originated as a **three-person graduate optimization workshop**. This public repository is a professional portfolio adaptation maintained by **Franbon Ahmed Mohammed**.
+The project originated as a collaborative graduate optimization workshop. This public repository is a professional portfolio adaptation maintained by **Franbon Ahmed Mohammed**.
 
 > **Copyright note:** the original course case handout is not included or reproduced. The repository contains only the mathematical formulation, derived results from the submitted analysis, and clearly labeled portfolio extensions.
 
@@ -27,7 +27,7 @@ The decision variables allocate Grade A and Grade B tomatoes to **whole tomatoes
 - Grade A and Grade B supply,
 - minimum quality requirements for whole tomatoes and juice.
 
-The saved source result gives an optimal contribution of **$676,069**. Paste is produced at capacity, while Grade A and Grade B supplies are binding. The source sensitivity analysis values Grade A supply at **$271.005 per additional 1,000 lb** and Grade B at **$173.665 per additional 1,000 lb**. fileciteturn48file2L103-L123
+The saved source result gives an optimal contribution of **$676,069**. Paste is produced at capacity, while Grade A and Grade B supplies are binding. The source sensitivity analysis values Grade A supply at **$271.005 per additional 1,000 lb** and Grade B at **$173.665 per additional 1,000 lb**. 
 
 ![Base production mix](images/product_mix.png)
 
@@ -45,11 +45,11 @@ The saved source result gives an optimal contribution of **$676,069**. Paste is 
 | Fixed setup costs | Open Juice + Paste | Net profit $542,000 |
 | Contract under uncertainty | Order ≈ 3.65M lb on tested grid | Expected profit $125,716.47 |
 
-These recommendations are directly supported by the submitted analysis. fileciteturn48file0L20-L38 fileciteturn48file1L67-L92 fileciteturn48file4L167-L196
+These recommendations are directly supported by the submitted analysis. 
 
 ## Fixed setup cost: from enumeration to MILP
 
-The original assignment checked all seven non-empty combinations of production lines and found that **Juice + Paste** produces the highest net profit at **$542,000**. fileciteturn48file1L81-L92
+The original assignment checked all seven non-empty combinations of production lines and found that **Juice + Paste** produces the highest net profit at **$542,000**. 
 
 ![Line setup comparison](images/setup_cost_comparison.png)
 
@@ -72,10 +72,9 @@ This formulation is intended to reproduce the same source decision while demonst
 
 ## Contracting under uncertainty
 
-The source Part 6 uses sunny, normal, and poor crop-quality scenarios with probabilities **25%, 50%, and 25%** and evaluates raw-material orders from 0 to 13 million lb. The original Gurobi code uses a **50,000-lb grid step**. fileciteturn50file0L180-L220
+The source Part 6 uses sunny, normal, and poor crop-quality scenarios with probabilities **25%, 50%, and 25%** and evaluates raw-material orders from 0 to 13 million lb. The original Gurobi code uses a **50,000-lb grid step**. 
 
-The source report finds the best tested quantity at **3.65 million lb**, with expected profit **$125,716.47**. fileciteturn48file4L182-L190
-
+The source report finds the best tested quantity at **3.65 million lb**, with expected profit **$125,716.47**.
 ![Expected profit vs contract quantity](images/contract_expected_profit.png)
 
 The expected-profit curve is a **portfolio visualization extension** generated from the same source LP coefficients and scenario probabilities. Its best grid point is **3.65M lb** with expected profit **$125,716.47**, matching the submitted result to rounding.
@@ -87,7 +86,6 @@ The expected-profit curve is a **portfolio visualization extension** generated f
 ```text
 red-brand-canners-optimization/
 ├── README.md
-├── PORTFOLIO_NOTES.md
 ├── notebooks/
 │   └── rbc_production_optimization.ipynb
 ├── src/
@@ -120,4 +118,4 @@ jupyter notebook
 
 ## Project origin
 
-This analysis originated as a **three-person graduate optimization workshop**. I maintain this public portfolio adaptation to document the modeling logic, business recommendations, and additional MILP / visualization extensions.
+This analysis originated as a collaborative optimization workshop. I maintain this public portfolio adaptation to document the modeling logic, business recommendations, and additional MILP / visualization extensions.
